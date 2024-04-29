@@ -76,6 +76,7 @@ footer {
 #confirmation-message {
     margin-top: 10px;
     padding: 10px;
+    padding-bottom: 10px;
     background-color: #4CAF50; /* Green background */
     color: white; /* White text */
     border-radius: 5px; /* Rounded corners */
