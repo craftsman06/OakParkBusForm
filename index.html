@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OakParkBusRequest</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "pfoRNWtdXZ2nFKWhI",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="oakparkpentecostals">
+        <img src="Oakparklogoblack.png" class="logo" alt="Oak Park Logo">
+        <h2 class="bus">Bus Request</h2>
+    </header>
+
+    <form id="signup-form" onsubmit="sendMail(); return false;">
+        <fieldset>
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required>
+        </fieldset>
+        <fieldset>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="youremail@gmail.com" required>
+        </fieldset>
+        <fieldset>
+            <label for="age">Age:</label>
+            <input id="age" name="age" type="number" placeholder="Your Age" required>
+        </fieldset>
+        <fieldset>
+            <label for="address">Street Address:</label>
+            <input id="address" name="address" type="text" placeholder="123 N St" required>
+        </fieldset>
+        <fieldset>
+            <label for="apt">Apartment #:</label>
+            <input id="apt" name="apt" type="text" placeholder="Apt 1A">
+        </fieldset>
+        <fieldset>
+            <label for="phone">Phone Number:</label>
+            <input id="phone" name="phone" type="tel" placeholder="(012) 345 - 6789" required>
+        </fieldset>
+        <fieldset>
+            <legend>What day(s) do you need a ride?</legend>
+            <label><input type="checkbox" name="days" value="sunday"> Sunday</label>
+            <label><input type="checkbox" name="days" value="wednesday"> Wednesday</label>
+            <!-- Add more checkboxes for other days if needed -->
+        </fieldset>
+        
+        
+        <button type="submit">Send Request</button>
+    </form>
+
+    <footer>&copy; Copyright OakParkPentecostals 2024</footer>
+</body>
+</html>
